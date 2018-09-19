@@ -16,4 +16,12 @@ describe('Calculator test', () => {
 	it('Calculate.average with arguments 3,4,5 should return 4', () => {
 		expect(Calculator.average(3,4,5)).toBe(4);
 	});
+
+	it('Calculate.average with arguments 3,4,5,6,7 should return 5', () => {
+		expect(Calculator.average(3,4,5,6,7)).toBe(5);
+	});
+
+	it('Calculate.average with arguments 8,8 should return 8', () => {
+		expect(Calculator.average(8,8)).toBe(8);
+	});
 });
