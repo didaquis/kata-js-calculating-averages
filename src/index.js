@@ -1,16 +1,10 @@
 class Calculator {
-	static average() {
+	static average(...arg) {
+		let sum = arg.reduce((accumulator, a) => {
+			return accumulator += a;
+		}, 0);
 
-		if (!arguments.length) {
-			return 0;
-		}
-
-		let sum = 0;
-		for (let i = 0; i < arguments.length; i++) {
-			sum += arguments[i];
-		}
-
-		return sum / arguments.length;
+		return (sum / arg.length) || 0;
 	}
 }
 

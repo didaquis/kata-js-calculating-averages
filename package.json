@@ -1,6 +1,6 @@
 {
   "name": "kata-js-calculating-averages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "kata js calculating averages",
   "main": "src/index.js",
   "scripts": {
