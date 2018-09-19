@@ -1,6 +1,16 @@
 class Calculator {
 	static average() {
-		return 0;
+
+		if (!arguments.length) {
+			return 0;
+		}
+
+		let sum = 0;
+		for (let arg in arguments) {
+			sum += arg;
+		}
+
+		return sum / arguments.length;
 	}
 }
 
