@@ -24,4 +24,12 @@ describe('Calculator test', () => {
 	it('Calculate.average with arguments 8,8 should return 8', () => {
 		expect(Calculator.average(8,8)).toBe(8);
 	});
+
+	it('Calculate.average with arguments -4,0 should return -2', () => {
+		expect(Calculator.average(-4,0)).toBe(-2);
+	});
+
+	it('Calculate.average with arguments -4,-2 should return -3', () => {
+		expect(Calculator.average(-4,-2)).toBe(-3);
+	});
 });
